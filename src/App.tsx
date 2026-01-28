@@ -1,13 +1,16 @@
+import { User } from "lucide-react";
 import Button from "./components/Button";
+import Input from "./components/Input";
 import "./styles/main.css";
 
 function App() {
 	return (
-		<div className="flex flex-col gap-4 bg-neutral-800 m-8 p-8 rounded-lg w-full max-w-md h-full">
-			<h1 className="text-neutral-100 title-lg">Make an appointment</h1>
-			<h2 className="text-neutral-300 title-md">
+		<div className="flex flex-col gap-4 bg-neutral-800 m-8 px-20 py-10 rounded-lg w-full max-w-lg h-full">
+			<h1 className="mb-1 text-neutral-100 title-lg">Make an appointment</h1>
+			<h2 className="mb-6 font-thin text-neutral-300 title-md">
 				Select a date and time, plus inform the client name for the appointment.
 			</h2>
+			<Input icon={User} label="Client" name="client" />
 			<Button>SUBMIT</Button>
 		</div>
 	);
