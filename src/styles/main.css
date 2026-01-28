@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+@theme {
+	--color-primary-light: #dbc170;
+	--color-primary: #b8952e;
+	--color-primary-dark: #846f2e;
+	--font-catamaran: Catamaran, sans-serif;
+}
+
+@layer base {
+	body {
+		font-family: var(--font-catamaran);
+		background-color: var(--color-neutral-900);
+	}
+}
+
+@layer components {
+	.title-lg {
+		font-size: 2rem;
+		font-weight: bold;
+		line-height: 1.5rem;
+	}
+
+	.title-md {
+		font-size: 1rem;
+		font-weight: bold;
+		line-height: 1.5rem;
+	}
+
+	.title-sm {
+		font-size: 0.875rem;
+		font-weight: bold;
+		line-height: 1.125rem;
+	}
+
+	.text-md {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+
+	.text-sm {
+		font-size: 0.875rem;
+		line-height: 1.125rem;
+	}
+}
