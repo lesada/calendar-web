@@ -10,7 +10,7 @@ function Button({ children, disabled, ...rest }: ButtonProps) {
 		<button
 			{...rest}
 			className={clsx(
-				"flex justify-center items-center bg-primary hover:bg-primary-light px-4 py-2 border-2 hover:border-primary-light rounded-lg h-14 text-gray-950 transition-colors cursor-pointer title-sm",
+				"flex justify-center items-center bg-primary hover:bg-primary-light px-4 py-2 border-2 hover:border-primary-light rounded-lg h-14 text-gray-950 transition-colors cursor-pointer title-sm shrink-0",
 				{
 					disabled: "bg-primary-dark cursor-not-allowed",
 				},
