@@ -19,7 +19,7 @@ function App() {
 					Select a date and time, plus inform the client name for the
 					appointment.
 				</h2>
-
+				<Input mask="date" className="mb-4" icon={User} label="Client" name="client" />
 				<h3 className="text-md text-neutral-100">A.M.</h3>
 				<div className="gap-3 grid grid-cols-3 mb-4">
 					<Slot label="08:00" value="08:00" />
